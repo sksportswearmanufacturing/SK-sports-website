@@ -6,29 +6,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {margin:0; font-family:Arial,sans-serif; background:#f4f6f8; color:#333;}
-    header {background:#0a1f44; color:white; padding:20px 15px; text-align:center;}
-    header img {vertical-align:middle; width:150px; height:150px; border-radius:10px;}
-    header h1 {display:inline-block; margin-left:20px; font-size:28px; vertical-align:middle;}
-    header p {margin-top:10px; font-size:16px;}
-    .banner img {width:100%; border-radius:8px; margin-bottom:20px;}
-    .container {max-width:900px; margin:30px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
-    .section {margin-bottom:30px;}
-    .section h2 {color:#0a1f44; border-bottom:2px solid #0a1f44; padding-bottom:5px;}
-    .info p {font-size:16px; line-height:1.6;}
-    .gallery {display:flex; flex-wrap:wrap; gap:15px;}
-    .gallery img {width:200px; border-radius:8px;}
-    footer {background:#0a1f44; color:white; text-align:center; padding:15px; margin-top:30px;}
-    .whatsapp {position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 8px rgba(0,0,0,0.3);}
-    .whatsapp:hover {background:#1ebe5d;}
-    @media (max-width:600px){header h1{display:block;margin-left:0;font-size:22px;} header img{width:100px;height:100px;} .gallery img{width:100%;}}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #0a1f44;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    header img {
+      vertical-align: middle;
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 28px;
+      vertical-align: middle;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    /* Banners */
+    .banner img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #0a1f44;
+      border-bottom: 2px solid #0a1f44;
+      padding-bottom: 5px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    /* Hover effect for T-shirts */
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        display: block;
+        margin-left: 0;
+        font-size: 22px;
+      }
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+      .gallery img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Banner -->
+  <!-- Top Banner -->
   <div class="banner">
-    <img src="banner.jpg" alt="SK Sports Banner">
+    <img src="banner.jpg" alt="SK Sports Top Banner">
   </div>
 
   <!-- Header -->
@@ -54,18 +168,26 @@
       <p><strong>🏠 Address:</strong> 23-3-164/K, First Floor, Vaikuntha Puram Arch Road, Main Road, Tummalagunta Road, Thummalagunta, Tirupati, Andhra Pradesh – 517502</p>
     </div>
 
-    <!-- Products Gallery -->
+    <!-- Products Gallery (7 T-shirts) -->
     <div class="section info">
       <h2>Our Products</h2>
       <div class="gallery">
         <img src="tshirt1.jpg" alt="T-Shirt 1">
         <img src="tshirt2.jpg" alt="T-Shirt 2">
         <img src="tshirt3.jpg" alt="T-Shirt 3">
-        <!-- Add more T-shirt pics like this -->
+        <img src="tshirt4.jpg" alt="T-Shirt 4">
+        <img src="tshirt5.jpg" alt="T-Shirt 5">
+        <img src="tshirt6.jpg" alt="T-Shirt 6">
+        <img src="tshirt7.jpg" alt="T-Shirt 7">
       </div>
     </div>
 
   </div>
+
+  <!-- Lower Banner (Optional) -->
+  <!-- <div class="banner">
+    <img src="lower-banner.jpg" alt="SK Sports Lower Banner">
+  </div> -->
 
   <footer>
     © 2026 SK Sports Wear & Manufacturing
