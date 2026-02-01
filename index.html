@@ -80,6 +80,188 @@
       justify-content: center;
     }
 
+    /* Footer */
+    footer {
+      background: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    /* Responsive */
+    @media (max-width:600px) {
+      header h1{
+        display:block;
+        margin-left:0;
+        font-size:22px;
+      }
+      header img{
+        width:100px;
+        height:100px;
+      }
+      .gallery img{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="banner">
+    <img src="banner.jpg" alt="SK Sports Top Banner">
+  </div>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="SK Sports Wear Logo">
+    <h1>SK Sports Wear & Manufacturing</h1>
+    <p>T-Shirt Manufacturing Company</p>
+  </header>
+
+  <div class="container">
+
+    <!-- About Us -->
+    <div class="section info">
+      <h2>About Us</h2>
+      <p>We are a professional sports wear and T-shirt manufacturing company, delivering quality products with reliable service.</p>
+    </div>
+
+    <!-- Company Details -->
+    <div class="section info">
+      <h2>Company Details & Contact Information</h2>
+      <p><strong>📍 Location:</strong> Tirupati</p>
+      <p><strong>📞 Contact:</strong> 8919982768</p>
+      <p><strong>🏠 Address:</strong> 23-3-164/K, First Floor, Vaikuntha Puram Arch Road, Main Road, Tummalagunta Road, Thummalagunta, Tirupati, Andhra Pradesh – 517502</p>
+    </div>
+
+    <!-- Products Gallery (Empty) -->
+    <div class="section info">
+      <h2>Our Products</h2>
+      <div class="gallery">
+        <!-- T-shirts removed -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Lower Banner (Optional) -->
+  <!--
+  <div class="banner">
+    <img src="lower-banner.jpg" alt="SK Sports Lower Banner">
+  </div>
+  -->
+
+  <footer>
+    © 2026 SK Sports Wear & Manufacturing
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a class="whatsapp" href="https://wa.me/918919982768" target="_blank">💬 Chat on WhatsApp</a>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SK Sports Wear & Manufacturing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #0a1f44;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    header img {
+      vertical-align: middle;
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 28px;
+      vertical-align: middle;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    /* Banners */
+    .banner img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #0a1f44;
+      border-bottom: 2px solid #0a1f44;
+      padding-bottom: 5px;
+    }
+
+    .info p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
     .gallery img {
       width: 200px;
       border-radius: 8px;
